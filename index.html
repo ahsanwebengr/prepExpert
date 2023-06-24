@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prep Expert</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Tailwind CSS CND  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Box Icons CDN  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar w-full fixed top-0 left-0 py-3 z-[99]">
+      <!-- Desktop navbar  -->
+      <div class="container flex justify-between items-center">
+        <img
+          src="./assets/images/logo.png"
+          alt="Branding Logo"
+          class="w-[120px]"
+        />
+        <ul class="md:flex gap-4 items-center flex-start hidden">
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >How to Play</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >Result</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >About Us</a
+            >
+          </li>
+        </ul>
+        <button
+          class="border border-secondary shadow-md px-5 py-1 rounded text-black hover:bg-secondary hover:text-white hover:border-transparent ease-in duration-300 md:block hidden"
+        >
+          Join Us
+        </button>
+
+        <div class="menu-btn md:hidden w-6 h-6"></div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navbar  -->
+    <nav class="bg-white w-full mx-auto z-[99] mobile-nav md:hidden">
+      <ul class="flex flex-col p-3 mx-auto gap-4 items-center flex-start">
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >How to Play</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >Result</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <button
+            class="border border-secondary shadow-md px-5 py-1 rounded text-black hover:bg-secondary hover:text-white hover:border-transparent ease-in duration-300"
+          >
+            Join Us
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section id="hero-banner" class="flex items-center justify-center">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center mt-4">
+          <!-- Column Left  -->
+          <div class="col-left">
+            <div
+              class="bg-white banner-search-bar border rounded-md max-w-[500px] p-3"
+            >
+              <input
+                type="text"
+                placeholder="Search Course"
+                name="search_course"
+                id="searchCousrse"
+                class="bg-transparent focus:outline-none text-base"
+              />
+              <label
+                for="searchCousrse"
+                class="flex items-center justify-center"
+                ><i class="bx bx-sm bx-search cursor-pointer"></i
+              ></label>
+            </div>
+            <h1
+              class="text-3xl md:text-6xl text-black leading-tight font-bold max-w-[600px] my-3"
+            >
+              Take Your Learning To The Next Level
+            </h1>
+            <p class="text-black mt-3 max-w-[360px]">
+              Boost your skills through online educational platform for digital
+              skills
+            </p>
+
+            <!-- Mobile BTN  -->
+            <div class="flex gap-3 mt-4 md:hidden">
+              <img
+                src="./assets/images/google-play.png"
+                alt="playStore"
+                class="w-20"
+              />
+              <img
+                src="./assets/images/apple-store.png"
+                alt="apple-store"
+                class="w-20"
+              />
+            </div>
+          </div>
+          <!-- Column Right  -->
+          <div class="col-right mx-auto hidden md:block">
+            <img
+              src="./assets/images/banner-img.png"
+              alt="banner-img"
+              class="w-[100%]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Counter Section Start -->
+    <section class="bg-brand">
+      <div class="container">
+        <div class="grid grid-cols-4 gap-2">
+          <!-- Single Count  -->
+          <div
+            class="flex flex-col text-white text-center md:border-r border-white gap-3"
+          >
+            <h2 class="text-2xl sm:text-5xl font-semibold">540</h2>
+            <p class="text-[9px] sm:text-base">Various Courses</p>
+          </div>
+          <!-- Single Count  -->
+          <div
+            class="flex flex-col text-white text-center md:border-r border-white gap-3"
+          >
+            <h2 class="text-2xl sm:text-5xl font-semibold">100+</h2>
+            <p class="text-[9px] sm:text-base">Expert Mentor</p>
+          </div>
+          <!-- Single Count  -->
+          <div
+            class="flex flex-col text-white text-center md:border-r border-white gap-3"
+          >
+            <h2 class="text-2xl sm:text-5xl font-semibold">1800</h2>
+            <p class="text-[9px] sm:text-base">Enrollments</p>
+          </div>
+          <!-- Single Count  -->
+          <div class="flex flex-col text-white text-center gap-3">
+            <h2 class="text-2xl sm:text-5xl font-semibold">45K</h2>
+            <p class="text-[9px] sm:text-base">Active Users</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Courses Section Start  -->
+    <section>
+      <div class="container">
+        <h4 class="heading mx-auto text-black text-xl md:text-4xl">
+          Choose Your Educational Course
+        </h4>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-8">
+          <!-- Single Course  -->
+          <div
+            class="flex flex-col items-center justify-center gap-2 text-center rounded-lg py-5 course-card"
+          >
+            <img
+              src="./assets/images/courses/img-1.png"
+              alt="img-1"
+              class="w-20 h-20 sm:w-24 sm:h-24"
+            />
+            <p class="text-sm sm:text-base">MDCAT Chemistry</p>
+          </div>
+          <!-- Single Course  -->
+          <div
+            class="flex flex-col gap-2 items-center justify-center text-center rounded-lg py-5 course-card"
+          >
+            <img
+              src="./assets/images/courses/img-2.png"
+              alt="img-2"
+              class="w-20 h-20 sm:w-24 sm:h-24"
+            />
+            <p class="text-sm sm:text-base">O’Level &A’Level</p>
+          </div>
+          <!-- Single Course  -->
+          <div
+            class="flex flex-col gap-2 items-center justify-center text-center rounded-lg py-5 course-card"
+          >
+            <img
+              src="./assets/images/courses/img-3.png"
+              alt="img-3"
+              class="w-20 h-20 sm:w-24 sm:h-24"
+            />
+            <p class="text-sm sm:text-base">IELTS Exams</p>
+          </div>
+          <!-- Single Course  -->
+          <div
+            class="flex flex-col gap-2 items-center justify-center text-center rounded-lg py-5 course-card"
+          >
+            <img
+              src="./assets/images/courses/img-4.png"
+              alt="img-4"
+              class="w-20 h-20 sm:w-24 sm:h-24"
+            />
+            <p class="text-sm sm:text-base">Chemical Testing</p>
+          </div>
+          <!-- Single Course  -->
+          <div
+            class="flex flex-col gap-2 items-center justify-center text-center rounded-lg py-5 course-card"
+          >
+            <img
+              src="./assets/images/courses/img-5.png"
+              alt="img-5"
+              class="w-20 h-20 sm:w-24 sm:h-24"
+            />
+            <p class="text-sm sm:text-base">FSC/Matric</p>
+          </div>
+          <!-- Single Course  -->
+          <div
+            class="flex flex-col gap-2 items-center justify-center text-center rounded-lg py-5 course-card"
+          >
+            <img
+              src="./assets/images/courses/img-6.png"
+              alt="img-6"
+              class="w-20 h-20 sm:w-24 sm:h-24"
+            />
+            <p class="text-sm sm:text-base">IELTS Exams</p>
+          </div>
+          <!-- Single Course  -->
+          <div
+            class="flex flex-col gap-2 items-center justify-center text-center rounded-lg py-5 course-card"
+          >
+            <img
+              src="./assets/images/courses/img-7.png"
+              alt="img-7"
+              class="w-20 h-20 sm:w-24 sm:h-24"
+            />
+            <p class="text-sm sm:text-base">MDCAT Chemistry</p>
+          </div>
+          <!-- Single Course  -->
+          <div
+            class="flex flex-col gap-2 items-center justify-center text-center rounded-lg py-5 course-card"
+          >
+            <img
+              src="./assets/images/courses/img-8.png"
+              alt="img-8"
+              class="w-20 h-20 sm:w-24 sm:h-24"
+            />
+            <p class="text-sm sm:text-base">O’Level &A’Level</p>
+          </div>
+        </div>
+        <p class="text-center text-sm sm:text-base">
+          Meritnation's unique blend of features developed after years of
+          research, to help you excel
+        </p>
+      </div>
+    </section>
+    <!-- Courses Section End -->
+
+    <!-- Online Classes Section  Start-->
+    <section class="bg-light">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+          <!-- Column Left  -->
+          <div class="col-left">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-3">
+              Live Online Classes
+            </h2>
+            <h3 class="text-lg sm:text-2xl font-medium mb-4 font-anek">
+              With the best teacher
+            </h3>
+            <p class="text-sm sm:text-base lg:max-w-[480px]">
+              Curriculum aligned, structured Live Class session to give you a
+              complete learning experience. You have the option to choose a
+              schedule that suits you the most
+            </p>
+            <!-- Online Classes Card -->
+            <div class="inline-block pl-10 p-5 mt-12 classes-card">
+              <div class="ribbon">
+                <i class="bx bx-arrow-back bx-rotate-180"></i>
+              </div>
+              <h5 class="text-xl fw-semibold mb-3">Pre Live Class</h5>
+              <p class="text-sm sm:text-base lg:max-w-[380px]">
+                You will be prompted to go through the videos and notes before
+                the class to grasp the concepts better during live class
+              </p>
+            </div>
+
+            <!-- Online Classes Card -->
+            <div class="inline-block pl-10 p-5 mt-12 classes-card class-2">
+              <div class="ribbon">
+                <i class="bx bx-arrow-back bx-rotate-180"></i>
+              </div>
+              <h5 class="text-xl fw-semibold mb-3">In Live Class</h5>
+              <p class="text-sm sm:text-base lg:max-w-[380px] mb-2">
+                Concepts are taught in the live class by Expert Teacher using
+                rich multimedia content such as 3D Models, Videos & GIF's to
+                ensure complete mastery.
+              </p>
+              <p class="text-sm sm:text-base lg:max-w-[380px] mb-2">
+                Live chat option with teachers to ensure 2-way communication.
+              </p>
+              <p class="text-sm sm:text-base lg:max-w-[380px] mb-2">
+                Live quizzes & analytics to further sharpen your learning.
+              </p>
+            </div>
+          </div>
+          <!-- Column Right  -->
+          <div class="col-right">
+            <img
+              src="./assets/images/online-class.png"
+              alt="online-class"
+              class="w-full max-w-[550px]"
+            />
+            <!-- Online Classes Card -->
+            <div class="inline-block pl-10 p-5 mt-12 classes-card">
+              <div class="ribbon">
+                <i class="bx bx-arrow-back bx-rotate-180"></i>
+              </div>
+              <h5 class="text-xl fw-semibold mb-3">Post Live Class</h5>
+              <p class="text-sm sm:text-base lg:max-w-[380px] mb-2">
+                A class test after every live class to help you fortify your
+                learning
+              </p>
+              <p class="text-sm sm:text-base lg:max-w-[380px] mb-2">
+                In case you miss a live class or would like to revise, you can
+                watch the recording
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Online Classes Section End -->
+
+    <!-- Study Resources Start  -->
+    <section>
+      <div class="container">
+        <h2 class="text-black text-2xl sm:text-3xl font-semibold mb-3">
+          Study Resources
+        </h2>
+        <h3 class="text-lg sm:text-2xl font-anek font-medium mb-4">
+          To help you learn at your own pace
+        </h3>
+        <p class="text-sm sm:text-base lg:max-w-[630px] w-full">
+          Be an independent self motivated learner. Our scientifically designed
+          learning resources are geared to help you pack more punch into your
+          study time
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-6 items-center">
+          <!-- Column Left  -->
+          <div class="flex flex-col gap-4 mt-2">
+            <h3 class="text-xl sm:text-2xl font-bold">
+              Concept <span class="text-brand">Videos & Notes</span>
+            </h3>
+            <ul>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i>Short & Crisp videos for
+                better concept clarity
+              </li>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i>
+                Chapter-wise downloadable Revision Notes for last minute
+                preparation
+              </li>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i>
+                NCERT & Other reference books solutions for
+              </li>
+            </ul>
+          </div>
+          <!-- Column Right  -->
+          <div class="overflow-hidden">
+            <img
+              src="./assets/images/video.png"
+              alt="video"
+              class="w-full max-w-[500px]"
+            />
+          </div>
+          <!-- Column Left  -->
+          <div class="overflow-hidden hidden md:block">
+            <img
+              src="./assets/images/resoures-1.png"
+              alt="resources-1"
+              class="w-full max-w-[500px]"
+            />
+          </div>
+          <!-- Column Right  -->
+          <div class="flex flex-col gap-4 mt-2">
+            <h3 class="text-xl sm:text-2xl font-bold">Tests & Smart Reports</h3>
+            <ul>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i> Chapter-wise tests for
+                strengthening concepts
+              </li>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i>
+                Live Test Series to benchmark your performance against your
+                peers
+              </li>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i>
+                Smart reports to identify your weak areas
+              </li>
+            </ul>
+          </div>
+          <!-- Column Left  -->
+          <div class="overflow-hidden md:hidden">
+            <img
+              src="./assets/images/resoures-1.png"
+              alt="resources-1"
+              class="w-full max-w-[500px]"
+            />
+          </div>
+          <!-- Column Left  -->
+          <div class="flex flex-col gap-4 mt-2">
+            <h3 class="text-xl sm:text-2xl font-bold">
+              Doubts Resolutions Via Chat
+            </h3>
+            <ul>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i>Clear your doubts via
+                chat and stay doubt free
+              </li>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i>
+                Ask your question anytime - 24x7 availability
+              </li>
+              <li class="text-para text-xs sm:text-base mb-2">
+                <i class="bx bx-check-circle mr-1"></i>
+                Connect with our experts within 10 seconds
+              </li>
+            </ul>
+          </div>
+          <!-- Column Right  -->
+          <div class="overflow-hidden">
+            <img
+              src="./assets/images/resoures-2.png"
+              alt="resources-2"
+              class="w-full max-w-[500px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Study Resources End  -->
+
+    <!-- Our Result START -->
+    <section class="bg-light">
+      <div class="container">
+        <h2 class="text-black text-2xl sm:text-3xl font-semibold mb-3">
+          Our Result
+        </h2>
+        <h3 class="text-lg sm:text-2xl font-anek font-medium mb-4">
+          To help you learn at your own pace
+        </h3>
+
+        <div
+          class="flex items-center flex-wrap gap-x-6 gap-y-10 mt-8 justify-center"
+        >
+          <!-- Single Avatar  -->
+          <div
+            class="team-avatar flex basis-[94%] sm:basis-[46%] lg:basis-[22%] items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar"
+              class="w-[90px] h-[90px] rounded-full my-6 z-10"
+            />
+            <h3 class="font-black family-roboto text-2xl mb-2">92.4%</h3>
+            <h4 class="font-anek text-xl">Thomas Dan</h4>
+            <h6 class="font-anek">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="team-avatar flex basis-[94%] sm:basis-[46%] lg:basis-[22%] items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar"
+              class="w-[90px] h-[90px] rounded-full my-6 z-10"
+            />
+            <h3 class="font-black family-roboto text-2xl mb-2">92.4%</h3>
+            <h4 class="font-anek text-xl">Thomas Dan</h4>
+            <h6 class="font-anek">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="team-avatar flex basis-[94%] sm:basis-[46%] lg:basis-[22%] items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar"
+              class="w-[90px] h-[90px] rounded-full my-6 z-10"
+            />
+            <h3 class="font-black family-roboto text-2xl mb-2">92.4%</h3>
+            <h4 class="font-anek text-xl">Thomas Dan</h4>
+            <h6 class="font-anek">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="team-avatar flex basis-[94%] sm:basis-[46%] lg:basis-[22%] items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar"
+              class="w-[90px] h-[90px] rounded-full my-6 z-10"
+            />
+            <h3 class="font-black family-roboto text-2xl mb-2">92.4%</h3>
+            <h4 class="font-anek text-xl">Thomas Dan</h4>
+            <h6 class="font-anek">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="team-avatar flex basis-[94%] sm:basis-[46%] lg:basis-[22%] items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar"
+              class="w-[90px] h-[90px] rounded-full my-6 z-10"
+            />
+            <h3 class="font-black family-roboto text-2xl mb-2">92.4%</h3>
+            <h4 class="font-anek text-xl">Thomas Dan</h4>
+            <h6 class="font-anek">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="team-avatar flex basis-[94%] sm:basis-[46%] lg:basis-[22%] items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar"
+              class="w-[90px] h-[90px] rounded-full my-6 z-10"
+            />
+            <h3 class="font-black family-roboto text-2xl mb-2">92.4%</h3>
+            <h4 class="font-anek text-xl">Thomas Dan</h4>
+            <h6 class="font-anek">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="team-avatar flex basis-[94%] sm:basis-[46%] lg:basis-[22%] items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar"
+              class="w-[90px] h-[90px] rounded-full my-6 z-10"
+            />
+            <h3 class="font-black family-roboto text-2xl mb-2">92.4%</h3>
+            <h4 class="font-anek text-xl">Thomas Dan</h4>
+            <h6 class="font-anek">Class 12</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Result END  -->
+
+    <!-- Newsletter START  -->
+    <section>
+      <div class="container newsletter">
+        <h4 class="heading mx-auto text-black text-xl md:text-4xl">
+          Subscribe For Get Update Every New Courses
+        </h4>
+        <div class="my-8 flex items-center justify-center">
+          <div
+            class="flex items-center justify-center max-w-[550px] w-full h-[48px]"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              class="bg-transparent focus:outline-none border-r-transparent fs-base pl-3 basis-[90%] input-group h-full"
+            />
+            <button
+              class="bg-secondary text-white fs-base py-3 px-3 sm:px-6 rounded-r-[12px] basis-[2%]"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter End -->
+    <!-- Footer Start  -->
+    <footer>
+      <div class="container">
+        <!-- Footer  Top  -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 border-2 p-4 rounded relative"
+        >
+          <!-- Column one  -->
+          <div class="col-1">
+            <img
+              src="./assets/images/logo-white.png"
+              alt="logo"
+              class="w-22 bg-brand p-2 md:p-5 rounded-t-lg logo-white"
+            />
+            <a
+              href="tel:+92 334 111 324"
+              class="text-color fs-base call text-xs sm:text-base"
+            >
+              <i class="bx bxs-phone text-brand"></i> <b>Call Us:</b> +92 334
+              111 324
+            </a>
+          </div>
+          <!-- Column Two  -->
+          <div class="col-2 mt-4 sm:mt-0">
+            <h4 class="text-xl mb-1 sm:mb-3 family-roboto">Board Papers</h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 10 Board Exam Resources
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  Board Paper Solutions
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base"
+                  >CBSE Class 12 Board Papers
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 10 Board Papers
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 12 Science Board Paper
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 12 Maths Board Paper
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Column Three  -->
+          <div class="col-3">
+            <h4 class="text-xl mb-1 sm:mb-3 family-roboto">Study Tips</h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">CBSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">ICSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Maharashtra</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Karnataka</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Kerala</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Tamilnadu</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">NEET</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">IIT JEE</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Column Four  -->
+          <div class="col-3">
+            <h4 class="text-xl mb-1 sm:mb-3 family-roboto">Boards</h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">CBSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">ICSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Maharashtra</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Karnataka</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Kerala</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Tamil Nadu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Footer Middle  -->
+
+        <p class="text-xs sm:text-base my-6 middle">
+          <span class="text-2xl font-medium mr-2">PrepExpert</span>
+          is an online education portal that provides interactive study material
+          for students of classes 1st to 12th for CBSE, ICSE, Maharashtra
+          (MSBSHSE), Karnataka (KSEEB) Kerala (SCERT) and Tamil Nadu boards.
+          Complete with elaborate live classes, multimedia tutorials,
+          interactive exercises, practice tests and expert help, we endeavour to
+          make school easy for students and help them score more.
+          <span class="hidden md:block">
+            We also provide free NCERT solutions, subject-wise synopses and
+            chapter-wise revision notes for classes 1st to 12th for a thorough
+            understanding of concepts right from a basic to an advanced level of
+            difficulty. Our products are carefully designed to ensure maximum
+            learning through proven techniques such as conceptual videos,
+            adaptive learning and collaborative learning methods.</span
+          >
+        </p>
+        <hr />
+        <!-- Footer Bottom  -->
+        <div class="flex items-center justify-between sm:flex-row mt-3">
+          <!-- Links -->
+          <ul class="flex gap-1 sm:gap-2 items-center mb-2">
+            <li>
+              <img
+                src="./assets/images/google-play.png"
+                alt="playStore"
+                class="w-20 hidden md:block"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/images/apple-store.png"
+                alt="apple-store"
+                class="w-20 hidden md:block"
+              />
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Anntourism</a>
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Privacy Policy</a>
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Terms of Usa</a>
+            </li>
+          </ul>
+          <!-- Social Media Links  -->
+          <ul class="flex gap-1">
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-instagram-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Start  -->
+
+    <!-- JS  -->
+    <script src="./scripts/index.js"></script>
+    <!-- Tailwind Config File  -->
+    <script src="./scripts/tailwindConfig.js"></script>
+  </body>
+</html>
