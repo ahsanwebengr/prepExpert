@@ -3,7 +3,9 @@
 /* Google Fonts Domine  */
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@600;700&display=swap');
 /* Google Fonts Anek Odia  */
-@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300;400;500&display=swap');
+/* Google Font Inter  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 :root {
   --brand-color: #026165;
@@ -13,6 +15,12 @@
   --light-black: rgba(42, 42, 44, 1);
   --border-color: rgba(0, 0, 0, 0.6);
   --para-color: rgba(0, 0, 0, 0.5);
+
+  /* font Families  */
+  --robot-font: 'Roboto', sans-serif;
+  --domine-font: 'Domine', serif;
+  --anek-font: 'Anek Odia', sans-serif;
+  --inter-font: 'Inter', sans-serif;
 }
 
 * {
@@ -23,46 +31,59 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--robot-font);
 }
-
 a {
   user-select: none;
 }
-.container {
-  max-width: 1260px !important;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
+
+button:focus,
+input:focus {
+  outline: none;
+  box-shadow: none;
 }
 
-.family-roboto {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-}
-.text-color {
-  color: var(--para-color);
-}
-
+/* Typography  */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Domine', serif;
+  font-family: var(--domine-font);
 }
-
+/* Common Classes  */
+.container {
+  max-width: 1260px !important;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.family-roboto {
+  font-family: var(--robot-font);
+  font-weight: 900;
+}
+.family-domine {
+  font-family: var(--domine-font);
+}
+.family-inter {
+  font-family: var(--inter-font);
+}
+.text-color {
+  color: var(--para-color);
+}
+.text-shadow {
+  text-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
 section {
   padding: 60px 0;
 }
-
 .heading {
   text-align: center;
   max-width: 472px;
   width: 100%;
+  font-family: var(--domine-font);
 }
-
 .bg-light {
   background: linear-gradient(
     180deg,
@@ -71,17 +92,21 @@ section {
     rgba(246, 244, 238, 0) 103.4%
   );
 }
+.red-gradient {
+  background: linear-gradient(270deg, #ff3022 48.03%, #ff5222 91.1%);
+}
+
+/* Navbar Styles  */
 .navbar.scrolled {
   background-color: var(--white-color);
 }
-
 #hero-banner {
   background: linear-gradient(
     154.18deg,
     rgba(2, 97, 101, 0.47) 0.37%,
     rgba(255, 255, 255, 0) 69.58%
   );
-  height: 60dvh;
+  height: 70dvh;
 }
 
 .banner-search-bar {
@@ -126,11 +151,9 @@ section {
   align-items: center;
   justify-content: center;
 }
-
 .ribbon-2 {
   background-color: var(--brand-color) !important;
 }
-
 .classes-card::after {
   content: '';
   position: absolute;
@@ -153,10 +176,14 @@ section {
 
 .font-anek {
   color: var(--light-black);
-  font-family: 'Anek Odia', sans-serif;
+  font-family: var(--anek-font);
   letter-spacing: 1.2px;
 }
-
+.blog-card {
+  border-radius: 19px;
+  background: #fffafa;
+  box-shadow: 0px 5px 12px 4px rgba(0, 0, 0, 0.18);
+}
 .team-avatar {
   box-shadow: 5px 6px 9px 0px rgba(0, 0, 0, 0.19);
   background: linear-gradient(
@@ -167,7 +194,6 @@ section {
   border-radius: 22px;
   position: relative;
 }
-
 .team-avatar::before {
   content: '';
   position: absolute;
@@ -216,17 +242,24 @@ hr {
 .menu-btn.close {
   background-image: url(../assets/images/icons/bx-x.svg);
 }
+.course-cart {
+  box-shadow: 0px 2px 3.5999999046325684px 2.4000000953674316px
+    rgba(0, 0, 0, 0.17);
+}
 
+/* Tabs  */
+button[data-tabs-target].active {
+  color: var(--brand-color);
+  border-bottom:2px solid var(--brand-color);
+}
 /* Responsive Designs  */
 
-@media (max-width: 550px) {
+@media (max-width: 640px) {
   .logo-white {
-    top: -63px;
-    width: 120px;
+    position: static;
   }
   .call {
-    top: 12px;
-    left: 4px;
+    position: static;
   }
   .social-icons {
     font-size: 24px;
@@ -240,13 +273,16 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: top 0.4s ease-in, height 0.4s ease-in;
-     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .mobile-nav.active {
     top: 215px;
     height: auto;
+  }
+  .module-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -256,5 +292,8 @@ hr {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .module-grid {
+    grid-template-columns: 2fr 1fr;
   }
 }

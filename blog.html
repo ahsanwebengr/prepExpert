@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Tailwind CSS CND  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Box Icons CDN  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar w-full fixed top-0 left-0 py-3 z-[99]">
+      <!-- Desktop navbar  -->
+      <div class="container flex justify-between items-center">
+        <img
+          src="./assets/images/logo.png"
+          alt="Branding Logo"
+          class="w-[120px]" />
+        <ul class="md:flex gap-4 items-center flex-start hidden">
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >How to Play</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >Result</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-secondary transiton-all"
+              >About Us</a
+            >
+          </li>
+        </ul>
+        <button
+          class="border border-secondary shadow-md px-5 py-1 rounded text-black hover:bg-secondary hover:text-white hover:border-transparent ease-in duration-300 md:block hidden">
+          Join Us
+        </button>
+
+        <div class="menu-btn md:hidden w-6 h-6"></div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navbar  -->
+    <nav class="bg-white w-full mx-auto z-[99] mobile-nav md:hidden">
+      <ul class="flex flex-col p-3 mx-auto gap-4 items-center flex-start">
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >How to Play</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >Result</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-secondary transiton-all"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <button
+            class="border border-secondary shadow-md px-5 py-1 rounded text-black hover:bg-secondary hover:text-white hover:border-transparent ease-in duration-300">
+            Join Us
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Banner Section Start  -->
+    <section
+      class="bg-center bg-no-repeat h-[80vh] bg-[url('./assets/images/banner/banner-2.png')]">
+      <div
+        class="container h-full flex justify-center items-center flex-col text-center">
+        <h2
+          class="text-white text-2xl sm:text-4xl md:text-6xl mb-2 leading-snug text-shadow mb-2">
+          Prep Expert Blog
+        </h2>
+        <h5
+          class="text-white text-base md:text-2xl font-anek tracking-normal font-medium leading-relaxed mb-6 tracking-wide">
+          Our thoughts, Views and Everything Else
+        </h5>
+        <div
+          class="bg-white banner-search-bar border rounded-md max-w-[500px] w-full p-3">
+          <input
+            type="text"
+            placeholder="Search any blog here..."
+            name="search_course"
+            id="searchCousrse"
+            class="bg-transparent focus:outline-none text-base" />
+          <label for="searchCousrse" class="flex items-center justify-center"
+            ><i class="bx bx-sm bx-search cursor-pointer"></i
+          ></label>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Section End -->
+
+    <!-- Most Popular Blogs Start  -->
+    <section>
+      <div class="container">
+        <h4 class="heading mx-auto text-black text-xl md:text-4xl">
+          Most Popular Blogs
+        </h4>
+        <!-- Tabs -->
+        <div class="border-b border-gray-200 my-4 mx-auto max-w-[540px]">
+          <ul
+            class="flex flex-wrap items-center justify-center"
+            id="myTab"
+            data-tabs-toggle="#myTabContent"
+            role="tablist">
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block text-gray-500 hover:text-brand hover:border-brand rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 active"
+                id="popular-tab"
+                data-tabs-target="#popular"
+                type="button"
+                role="tab"
+                aria-controls="popular"
+                aria-selected="true">
+                Most Popular
+              </button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block text-gray-500 hover:text-brand hover:border-brand rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2"
+                id="general-tab"
+                data-tabs-target="#general"
+                type="button"
+                role="tab"
+                aria-controls="general"
+                aria-selected="false">
+                General
+              </button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block text-gray-500 hover:text-brand hover:border-brand rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2"
+                id="oa-tab"
+                data-tabs-target="#oa"
+                type="button"
+                role="tab"
+                aria-controls="oa"
+                aria-selected="false">
+                O&A Level
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block text-gray-500 hover:text-brand hover:border-brand rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2"
+                id="ca-tab"
+                data-tabs-target="#ca"
+                type="button"
+                role="tab"
+                aria-controls="ca"
+                aria-selected="false">
+                CA
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block text-gray-500 hover:text-brand hover:border-brand rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2"
+                id="css-tab"
+                data-tabs-target="#css"
+                type="button"
+                role="tab"
+                aria-controls="css"
+                aria-selected="false">
+                CSS
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block text-gray-500 hover:text-brand hover:border-brand rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2"
+                id="mdcat-tab"
+                data-tabs-target="#mdcat"
+                type="button"
+                role="tab"
+                aria-controls="mdcat"
+                aria-selected="false">
+                MDCAT
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- Tabs Content  -->
+        <div id="myTabContent">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4"
+            id="popular"
+            role="tabpanel"
+            aria-labelledby="popular-tab">
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-1.png"
+                alt="blog-1"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">MDCAT</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">MDCAT - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail MDCAT struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-2.png"
+                alt="blog-2"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CA</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CA - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CA struggle to manage their preparation
+                  during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-3.png"
+                alt="blog-3"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">O & A Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">O & A Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail O & A Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-4.png"
+                alt="blog-4"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">MDCAT</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">MDCAT - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail MDCAT struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-5.png"
+                alt="blog-5"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CSS</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CSS - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CSS struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-6.png"
+                alt="blog-6"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CA</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CA - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CA struggle to manage their preparation
+                  during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-7.png"
+                alt="blog-7"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">General</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">General - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail General struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-8.png"
+                alt="blog-8"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">MDCAT</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">MDCAT - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail MDCAT struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- General Tabs  -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 hidden"
+            id="general"
+            role="tabpanel"
+            aria-labelledby="general-tab">
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-2.png"
+                alt="blog-2"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">General</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">General - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail General struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-6.png"
+                alt="blog-6"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">General</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">General - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail General struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-7.png"
+                alt="blog-7"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">General</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">General - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail General struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- O&A Level Tabs  -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 hidden"
+            id="oa"
+            role="tabpanel"
+            aria-labelledby="oa-tab">
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-5.png"
+                alt="blog-5"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">O&A Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">O&A Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail O&A Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-8.png"
+                alt="blog-8"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">O&A Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">O&A Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail O&A Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- CA Level Tabs  -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 hidden"
+            id="ca"
+            role="tabpanel"
+            aria-labelledby="ca-tab">
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-4.png"
+                alt="blog-4"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CA Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CA Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CA Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-3.png"
+                alt="blog-3"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CA Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CA Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CA Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-8.png"
+                alt="blog-8"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CA Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CA Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CA Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- CSS Level Tabs  -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 hidden"
+            id="css"
+            role="tabpanel"
+            aria-labelledby="css-tab">
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-3.png"
+                alt="blog-3.png"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CSS Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CSS Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CSS Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-2.png"
+                alt="blog-2"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CSS Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CSS Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CSS Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-7.png"
+                alt="blog-7"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CSS Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CSS Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CSS Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-6.png"
+                alt="blog-6"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">CSS Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">CSS Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail CSS Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- CSS Level Tabs  -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 hidden"
+            id="mdcat"
+            role="tabpanel"
+            aria-labelledby="mdcat-tab">
+            <!-- Single Card  -->
+            <div class="blog-card">
+              <img
+                src="./assets/images/blog images/blog-3.png"
+                alt="blog-3.png"
+                class="w-full" />
+              <div class="flex flex-col gap-2 p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium">MDCAT Level</span>
+                  <span class="text-xs font-medium">April 21st,2023</span>
+                </div>
+                <h5 class="text-lg sm:text-xl">MDCAT Level - Quiz Series</h5>
+                <p class="text-xs sm:text-base">
+                  Many students who fail MDCAT Level struggle to manage their
+                  preparation during the month of Ramazan....
+                </p>
+                <button
+                  class="text-brand text-xs sm:text-base flex items-center">
+                  Read more <i class="bx text-xl bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Most Popular Blogs End  -->
+
+    <!-- Newsletter START  -->
+    <section>
+      <div class="container newsletter">
+        <h4 class="heading mx-auto text-black text-xl md:text-4xl">
+          Subscribe For Get Update Every New Courses
+        </h4>
+        <div class="my-8 flex items-center justify-center">
+          <div
+            class="flex items-center justify-center max-w-[550px] w-full h-[48px]">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              class="bg-transparent focus:outline-none border-r-transparent fs-base pl-3 basis-[90%] input-group h-full" />
+            <button
+              class="bg-secondary text-white fs-base py-3 px-3 sm:px-6 rounded-r-[12px] basis-[2%]">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter End -->
+    <!-- Footer Start  -->
+    <footer>
+      <div class="container">
+        <!-- Footer  Top  -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 border-2 p-4 rounded relative">
+          <!-- Column one  -->
+          <div class="col-1">
+            <img
+              src="./assets/images/logo-white.png"
+              alt="logo"
+              class="w-20 md:w-[150px] bg-brand p-1 md:p-5 rounded-t-lg logo-white" />
+            <a
+              href="tel:+92 334 111 324"
+              class="text-color call text-xs sm:text-base">
+              <i class="bx bxs-phone text-brand"></i> <b>Call Us:</b> +92 334
+              111 324
+            </a>
+          </div>
+          <!-- Column Two  -->
+          <div class="col-2">
+            <h4 class="text-xl mb-1 sm:mb-3 family-roboto">Board Papers</h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 10 Board Exam Resources
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  Board Paper Solutions
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base"
+                  >CBSE Class 12 Board Papers
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 10 Board Papers
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 12 Science Board Paper
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 12 Maths Board Paper
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Column Three  -->
+          <div class="col-3">
+            <h4 class="text-xl mb-1 sm:mb-3 family-roboto">Study Tips</h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">CBSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">ICSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Maharashtra</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Karnataka</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Kerala</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Tamilnadu</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">NEET</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">IIT JEE</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Column Four  -->
+          <div class="col-3">
+            <h4 class="text-xl mb-1 sm:mb-3 family-roboto">Boards</h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">CBSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">ICSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Maharashtra</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Karnataka</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Kerala</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Tamil Nadu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Footer Middle  -->
+
+        <p class="text-xs sm:text-base my-6 middle">
+          <span class="font-medium">PrepExpert</span>
+          is an online education portal that provides interactive study material
+          for students of classes 1st to 12th for CBSE, ICSE, Maharashtra
+          (MSBSHSE), Karnataka (KSEEB) Kerala (SCERT) and Tamil Nadu boards.
+          Complete with elaborate live classes, multimedia tutorials,
+          interactive exercises, practice tests and expert help, we endeavour to
+          make school easy for students and help them score more.
+          <span class="hidden md:block">
+            We also provide free NCERT solutions, subject-wise synopses and
+            chapter-wise revision notes for classes 1st to 12th for a thorough
+            understanding of concepts right from a basic to an advanced level of
+            difficulty. Our products are carefully designed to ensure maximum
+            learning through proven techniques such as conceptual videos,
+            adaptive learning and collaborative learning methods.</span
+          >
+        </p>
+        <hr />
+        <!-- Footer Bottom  -->
+        <div class="flex items-center justify-between sm:flex-row mt-3">
+          <!-- Links -->
+          <ul class="flex gap-1 sm:gap-2 items-center mb-2">
+            <li>
+              <img
+                src="./assets/images/google-play.png"
+                alt="playStore"
+                class="w-20 hidden md:block" />
+            </li>
+            <li>
+              <img
+                src="./assets/images/apple-store.png"
+                alt="apple-store"
+                class="w-20 hidden md:block" />
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Anntourism</a>
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Privacy Policy</a>
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Terms of Usa</a>
+            </li>
+          </ul>
+          <!-- Social Media Links  -->
+          <ul class="flex gap-1">
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-instagram-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Start  -->
+
+    <!-- JS  -->
+    <script src="./scripts/index.js"></script>
+    <!-- Tailwind Config File  -->
+    <script src="./scripts/tailwindConfig.js"></script>
+    <!-- Tailwind TAB JS  -->
+    <!-- <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script> -->
+  </body>
+</html>
