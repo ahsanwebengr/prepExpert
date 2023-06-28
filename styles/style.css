@@ -15,6 +15,11 @@
   --light-black: rgba(42, 42, 44, 1);
   --border-color: rgba(0, 0, 0, 0.6);
   --para-color: rgba(0, 0, 0, 0.5);
+  --banner-gradient: linear-gradient(
+    154.18deg,
+    rgba(2, 97, 101, 0.47) 0.37%,
+    rgba(255, 255, 255, 0) 69.58%
+  );
 
   /* font Families  */
   --robot-font: 'Roboto', sans-serif;
@@ -100,13 +105,9 @@ section {
 .navbar.scrolled {
   background-color: var(--white-color);
 }
-#hero-banner {
-  background: linear-gradient(
-    154.18deg,
-    rgba(2, 97, 101, 0.47) 0.37%,
-    rgba(255, 255, 255, 0) 69.58%
-  );
-  height: 70dvh;
+.hero-banner {
+  background: var(--banner-gradient);
+  height: 80svh;
 }
 
 .banner-search-bar {
@@ -250,7 +251,7 @@ hr {
 /* Tabs  */
 button[data-tabs-target].active {
   color: var(--brand-color);
-  border-bottom:2px solid var(--brand-color);
+  border-bottom: 2px solid var(--brand-color);
 }
 /* Responsive Designs  */
 
@@ -273,12 +274,11 @@ button[data-tabs-target].active {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: top 0.4s ease-in, height 0.4s ease-in;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .mobile-nav.active {
-    top: 215px;
+    top: 210px;
     height: auto;
   }
   .module-grid {
