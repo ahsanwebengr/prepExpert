@@ -1,38 +1,40 @@
 // Add the Color in the navbar when user scroll
 
-window.addEventListener('scroll', function () {
-  const navbarElm = document.querySelector('nav');
-  if (window.scrollY >= 40) {
-    navbarElm.classList.add('scrolled');
+// Get the menu toggle button and the menu itself
+const toggleButton = document.querySelector(
+  '[data-collapse-toggle="navbar-sticky"]'
+);
+const menu = document.getElementById('navbar-sticky');
+
+// Add event listener to the toggle button
+toggleButton.addEventListener('click', () => {
+  const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
+
+  // Toggle the menu visibility
+  toggleButton.setAttribute('aria-expanded', !expanded);
+  menu.classList.toggle('hidden');
+});
+
+// Hide the menu on window resize if it's visible on small screens
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768 && !menu.classList.contains('hidden')) {
+    toggleButton.setAttribute('aria-expanded', false);
+    menu.classList.add('hidden');
+  }
+});
+
+// When user scroll 50px it's adds the Background color white
+const navbar = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('bg-white', 'border-b');
   } else {
-    navbarElm.classList.remove('scrolled');
+    navbar.classList.remove('bg-white', 'border-b');
   }
 });
 
-const mobileNav = document.querySelector('.mobile-nav');
-const hamburgerMenu = document.querySelector('.menu-btn');
-
-hamburgerMenu.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
-  hamburgerMenu.classList.toggle('close');
-});
-
-// If user click outside the navbar or link on the link of the it should close automatically
-
-document.addEventListener('click', function (event) {
-  // Check if the clicked element is within the mobile navigation or hamburger menu
-  const isClickInsideNav = mobileNav.contains(event.target);
-  const isClickInsideMenu = hamburgerMenu.contains(event.target);
-
-  // If the clicked element is outside the mobile navigation and hamburger menu, close the mobile navigation
-  if (!isClickInsideNav && !isClickInsideMenu) {
-    if (mobileNav.classList.contains('active')) {
-      mobileNav.classList.remove('active');
-      hamburgerMenu.classList.toggle('close');
-    }
-  }
-});
-
+// Active the tabs 
 const tabs = document.querySelectorAll('[data-tabs-toggle]');
 
 tabs.forEach(function (tabsToggleEl) {
