@@ -85,9 +85,12 @@ section {
 }
 .heading {
   text-align: center;
-  max-width: 472px;
+  max-width: 720px;
   width: 100%;
   font-family: var(--domine-font);
+  white-space: balance;
+  line-height: 132.5%;
+  letter-spacing: 1.2px;
 }
 .bg-light {
   background: linear-gradient(
@@ -107,7 +110,17 @@ section {
 }
 .hero-banner {
   background: var(--banner-gradient);
+  height: 100vh;
   height: 80svh;
+}
+
+.blog-banner {
+  background-image: url(../assets/images/banner/banner-2.png);
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .banner-search-bar {
