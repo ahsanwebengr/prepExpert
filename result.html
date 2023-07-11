@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Tailwind CSS CND  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Box Icons CDN  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="fixed w-full z-20 top-0 left-0 border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="./index.html" class="flex items-center">
+          <img src="./assets/images/logo.png" class="h-10 mr-3" alt="Logo" />
+        </a>
+        <div class="flex md:order-2">
+          <button
+            class="border border-secondary shadow-md px-3 sm:px-5 py-1 rounded text-black hover:bg-secondary hover:text-white hover:border-transparent text-sm sm:text-base ease-in duration-300 mx-2"
+          >
+            Join Us
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-secondary hover:text-white md:hover:bg-transparent md:hover:text-secondary md:p-0 lg:text-xl"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-secondary hover:text-white md:hover:bg-transparent md:hover:text-secondary md:p-0 lg:text-xl"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-secondary hover:text-white md:hover:bg-transparent md:hover:text-secondary md:p-0 lg:text-xl"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-secondary hover:text-white md:hover:bg-transparent md:hover:text-secondary md:p-0 lg:text-xl"
+                >Results</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-secondary hover:text-white md:hover:bg-transparent md:hover:text-secondary md:p-0 lg:text-xl"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-secondary hover:text-white md:hover:bg-transparent md:hover:text-secondary md:p-0 lg:text-xl"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Result Section Start -->
+    <section class="mt-40 mb-12">
+      <div class="container">
+        <h2
+          class="text-2xl md:text-3xl lg:text-[50px] font-semibold family-domine mb-5 text-center"
+        >
+          Our Result
+        </h2>
+        <h3
+          class="text-lg md:text-2xl lg:text-4xl font-medium mb-4 font-anek text-center"
+        >
+          To help you learn at your own pace
+        </h3>
+
+        <div
+          class="flex items-center flex-wrap gap-x-6 gap-y-10 mt-8 justify-center"
+        >
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar-1"
+              class="rounded-full max-w-[162px] max-h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-2.png"
+              alt="avatar-1"
+              class="rounded-full max-w-[162px] max-h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-3.png"
+              alt="avatar-1"
+              class="rounded-full max-w-[162px] max-h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-4.png"
+              alt="avatar-1"
+              class="rounded-full max-w-[162px] max-h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-5.png"
+              alt="avatar-1"
+              class="rounded-full max-w-[162px] max-h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-6.png"
+              alt="avatar-1"
+              class="rounded-full max-w-[162px] max-h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-7.png"
+              alt="avatar-1"
+              class="rounded-full max-w-[162px] max-h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-2.png"
+              alt="avatar-1"
+              class="rounded-full w-[162px] h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-5.png"
+              alt="avatar-1"
+              class="rounded-full max-w-[162px] max-h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-4.png"
+              alt="avatar-1"
+              class="rounded-full w-[162px] h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+          <!-- Single Avatar  -->
+          <div
+            class="flex p-6 items-center justify-center flex-col text-center"
+          >
+            <img
+              src="./assets/images/avatar/avatar-1.png"
+              alt="avatar-1"
+              class="rounded-full w-[162px] h-[162px]"
+            />
+            <h3
+              class="text-black font-semibold font-anek text-xl md:text-2xl lg:text-[40px] my-4"
+            >
+              92.4%
+            </h3>
+            <h3
+              class="text-black font-anek text-xl md:text-2xl lg:text-[40px] mb-2"
+            >
+              Thomas Dan
+            </h3>
+            <h6 class="font-anek text-base md:text-xl lg:text-2xl">Class 12</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Result Section End -->
+
+    <!-- Newsletter START  -->
+    <section>
+      <div class="container newsletter">
+        <h4 class="heading mx-auto text-black text-xl md:text-4xl lg:text-5xl">
+          Subscribe For Get Update Every New Courses
+        </h4>
+        <div class="my-8 flex items-center justify-center">
+          <div
+            class="flex items-center justify-center max-w-[680px] w-full h-[48px]"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              class="bg-transparent focus:outline-none border-r-transparent fs-base pl-3 basis-[90%] input-group h-full"
+            />
+            <button
+              class="bg-secondary text-white fs-base py-3 px-3 sm:px-6 rounded-r-[12px] basis-[2%]"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter End -->
+    <!-- Footer Start  -->
+    <footer>
+      <div class="container">
+        <!-- Footer  Top  -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 border-2 p-4 rounded relative"
+        >
+          <!-- Column one  -->
+          <div class="col-1">
+            <img
+              src="./assets/images/logo-white.png"
+              alt="logo"
+              class="w-20 md:w-[150px] bg-brand p-1 md:p-5 rounded-t-lg logo-white"
+            />
+            <a
+              href="tel:+92 334 111 324"
+              class="text-color call text-xs sm:text-base"
+            >
+              <i class="bx bxs-phone text-brand"></i> <b>Call Us:</b> +92 334
+              111 324
+            </a>
+          </div>
+          <!-- Column Two  -->
+          <div class="col-2">
+            <h4 class="text-xl lg:text-2xl mb-1 sm:mb-3 family-roboto">
+              Board Papers
+            </h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 10 Board Exam Resources
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  Board Paper Solutions
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base"
+                  >CBSE Class 12 Board Papers
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 10 Board Papers
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 12 Science Board Paper
+                </a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">
+                  CBSE Class 12 Maths Board Paper
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Column Three  -->
+          <div class="col-3">
+            <h4 class="text-xl lg:text-2xl mb-1 sm:mb-3 family-roboto">
+              Study Tips
+            </h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">CBSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">ICSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Maharashtra</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Karnataka</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Kerala</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Tamilnadu</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">NEET</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">IIT JEE</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Column Four  -->
+          <div class="col-3">
+            <h4 class="text-xl lg:text-2xl mb-1 sm:mb-3 family-roboto">
+              Boards
+            </h4>
+            <ul>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">CBSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">ICSE</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Maharashtra</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Karnataka</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Kerala</a>
+              </li>
+              <li class="text-color sm:mb-2 hover:text-secondary">
+                <a href="#" class="text-xs sm:text-base">Tamil Nadu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Footer Middle  -->
+
+        <p class="text-xs sm:text-sm my-6 middle">
+          <span class="font-medium">PrepExpert</span>
+          is an online education portal that provides interactive study material
+          for students of classes 1st to 12th for CBSE, ICSE, Maharashtra
+          (MSBSHSE), Karnataka (KSEEB) Kerala (SCERT) and Tamil Nadu boards.
+          Complete with elaborate live classes, multimedia tutorials,
+          interactive exercises, practice tests and expert help, we endeavour to
+          make school easy for students and help them score more.<span
+            class="hidden md:block"
+          >
+            We also provide free NCERT solutions, subject-wise synopses and
+            chapter-wise revision notes for classes 1st to 12th for a thorough
+            understanding of concepts right from a basic to an advanced level of
+            difficulty. Our products are carefully designed to ensure maximum
+            learning through proven techniques such as conceptual videos,
+            adaptive learning and collaborative learning methods.</span
+          >
+        </p>
+        <hr />
+        <!-- Footer Bottom  -->
+        <div class="flex items-center justify-between sm:flex-row mt-3">
+          <!-- Links -->
+          <ul class="flex gap-1 sm:gap-3 items-center mb-2">
+            <li>
+              <img
+                src="./assets/images/google-play.png"
+                alt="playStore"
+                class="w-20 hidden md:block"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/images/apple-store.png"
+                alt="apple-store"
+                class="w-20 hidden md:block"
+              />
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Aan Tourism</a>
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Privacy Policy</a>
+            </li>
+            <li class="hover:text-secondary">
+              <a href="#" class="text-[9px] sm:text-base">Terms of Usa</a>
+            </li>
+          </ul>
+          <!-- Social Media Links  -->
+          <ul class="flex gap-1">
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-instagram-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-twitter"></i
+              ></a>
+            </li>
+            <!-- <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
+                ><i class="bx social-icons bxl-linkedin-square"></i
+              ></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Start  -->
+
+    <!-- JS  -->
+    <script src="./scripts/index.js"></script>
+    <!-- Tailwind Config File  -->
+    <script src="./scripts/tailwindConfig.js"></script>
+  </body>
+</html>
