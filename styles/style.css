@@ -80,6 +80,18 @@ h6 {
 .text-shadow {
   text-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 }
+.input-shadow {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+}
+
+
+.input-shadow:focus {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--secondary-color);
+}
 section {
   padding: 60px 0;
 }
@@ -110,8 +122,8 @@ section {
 }
 .hero-banner {
   background: var(--banner-gradient);
-  height: 100vh;
-  height: 80svh;
+  height: 61vh;
+  height: 61svh;
 }
 
 .blog-banner {
