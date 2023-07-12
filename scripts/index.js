@@ -1,5 +1,3 @@
-// Add the Color in the navbar when user scroll
-
 // Get the menu toggle button and the menu itself
 const toggleButton = document.querySelector(
   '[data-collapse-toggle="navbar-sticky"]'

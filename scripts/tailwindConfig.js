@@ -10,6 +10,9 @@ tailwind.config = {
         cyan: '#16B9D6',
         mustered: '#026165',
       },
+      lineHeight: {
+        'extra-loose': '2.5',
+      },
     },
   },
 };
