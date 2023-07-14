@@ -15,7 +15,7 @@ toggleButton.addEventListener('click', () => {
 
 // Hide the menu on window resize if it's visible on small screens
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 768 && !menu.classList.contains('hidden')) {
+  if (window.innerWidth >= 1024 && !menu.classList.contains('hidden')) {
     toggleButton.setAttribute('aria-expanded', false);
     menu.classList.add('hidden');
   }
@@ -66,7 +66,7 @@ tabs.forEach(function (tabsToggleEl) {
         tabToggleEl.setAttribute('aria-selected', true);
         tabContentEl.classList.remove('hidden');
 
-        // hide and deactive currently active tab toggle and content
+        // hide and deactivate currently active tab toggle and content
         activeTabToggleEl.setAttribute('aria-selected', false);
         activeTabToggleEl.classList.remove('active');
         activeTabContentEl.classList.add('hidden');

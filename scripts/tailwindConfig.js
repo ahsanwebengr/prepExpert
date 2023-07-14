@@ -9,6 +9,8 @@ tailwind.config = {
         indigo: '#E8F8FB',
         cyan: '#16B9D6',
         mustered: '#026165',
+        grey: '#424D59',
+        label: '#3A3C3F',
       },
       lineHeight: {
         'extra-loose': '2.5',
