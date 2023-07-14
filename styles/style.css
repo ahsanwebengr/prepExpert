@@ -85,12 +85,41 @@ h6 {
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid transparent;
 }
-
-
 .input-shadow:focus {
   border-radius: 10px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--secondary-color);
+}
+.lh-lg {
+  line-height: 157% !important;
+}
+.custom-radio {
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  background: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: relative;
+}
+.custom-radio:checked::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-radio:focus {
+  outline: none;
+  box-shadow: 0 0 4px #000;
 }
 section {
   padding: 60px 0;
@@ -122,8 +151,13 @@ section {
 }
 .hero-banner {
   background: var(--banner-gradient);
-  height: 61vh;
-  height: 61svh;
+  height: 70vh;
+  height: 70svh;
+}
+.about-banner {
+  background: var(--banner-gradient);
+  height: 90vh;
+  height: 90svh;
 }
 
 .blog-banner {
@@ -226,7 +260,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 38%;
+  height: 35%;
   background-color: var(--brand-color);
   border-radius: 22px;
   z-index: 1;
@@ -278,6 +312,8 @@ button[data-tabs-target].active {
   color: var(--brand-color);
   border-bottom: 2px solid var(--brand-color);
 }
+
+
 /* Responsive Designs  */
 
 @media (max-width: 640px) {
