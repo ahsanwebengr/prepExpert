@@ -34,8 +34,9 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: var(--robot-font);
 }
 a {
@@ -116,11 +117,31 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .custom-radio:focus {
   outline: none;
   box-shadow: 0 0 4px #000;
 }
+ul.list {
+  list-style-type: none;
+}
+
+ul.list li {
+  position: relative;
+  padding-left: 1.8em;
+}
+
+ul.list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/images/icons/bx-check-circle.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 section {
   padding: 60px 0;
 }
@@ -270,16 +291,17 @@ section {
   box-shadow: 5px 6px 9px 0px rgba(0, 0, 0, 0.19);
 }
 .newsletter {
-  background-image: url(../assets/images/bg-stars.png);
+  background-image: url(../assets/images/stars-bg.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
 }
 .input-group {
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
 }
 .logo-white {
   position: absolute;
@@ -316,6 +338,13 @@ button[data-tabs-target].active {
   border-bottom: 2px solid var(--brand-color);
 }
 
+footer .footer-bg {
+  background-image: url(../assets/images/banner/footer-bg.png);
+  height: 100%;
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /* Responsive Designs  */
 
@@ -324,7 +353,8 @@ button[data-tabs-target].active {
     position: static;
   }
   .call {
-    position: static;
+    position: static !important;
+    margin: 15px 0;
   }
   .social-icons {
     font-size: 24px;
@@ -332,6 +362,11 @@ button[data-tabs-target].active {
 }
 
 @media (max-width: 767px) {
+  ul.list li::before {
+    top: 2px;
+    width: 10px;
+    height: 10px;
+  }
   .mobile-nav {
     position: fixed;
     top: -100%;
@@ -347,6 +382,9 @@ button[data-tabs-target].active {
   }
   .module-grid {
     grid-template-columns: 1fr;
+  }
+  .hero-banner {
+    height: 80vh;
   }
 }
 

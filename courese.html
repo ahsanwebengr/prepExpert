@@ -17,11 +17,13 @@
   <body>
     <!-- Navbar Start -->
     <nav class="fixed w-full z-20 top-0 left-0 border-gray-200">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
+      <div class="container flex items-center justify-between mx-auto p-2">
         <a href="./index.html" class="flex items-center">
-          <img src="./assets/images/logo.png" class="h-10 mr-3" alt="Logo" />
+          <img
+            src="./assets/images/logo.png"
+            class="w-[120px] lg:w-[155px] lg:h-[75px]"
+            alt="Logo"
+          />
         </a>
         <div class="flex lg:order-2">
           <button
@@ -136,6 +138,7 @@
     <section>
       <div class="container">
         <div class="grid module-grid gap-5">
+          <!-- Column Left  -->
           <div class="col-left">
             <div class="flex flex-col">
               <p
@@ -155,14 +158,16 @@
                 >
               </p>
 
-              <h5 class="text-2xl lg:text-3xl font-semibold family-domine my-4">
+              <h5
+                class="text-2xl lg:text-3xl font-semibold family-domine my-12 lh-lg"
+              >
                 Modules
               </h5>
-              <ul class="flex flex-col gap-5">
+              <ul class="flex flex-col gap-10">
                 <!-- Single Row  -->
                 <li class="flex items-center justify-between gap-3">
                   <!-- Count Number -->
-                  <div class="flex gap-4">
+                  <div class="flex gap-2 items-center">
                     <span
                       class="w-7 h-7 rounded-full flex items-center justify-center border shadow text-black fs-md family-inter"
                     >
@@ -183,7 +188,7 @@
                 </li>
                 <!-- Single Row  -->
                 <li class="flex items-center justify-between">
-                  <div class="flex gap-4">
+                  <div class="flex gap-2 items-center">
                     <!-- Count Number -->
                     <span
                       class="w-7 h-7 rounded-full flex items-center justify-center border shadow text-black fs-md family-inter"
@@ -205,7 +210,7 @@
                 </li>
                 <!-- Single Row  -->
                 <li class="flex items-center justify-between">
-                  <div class="flex gap-4">
+                  <div class="flex gap-2 items-center">
                     <!-- Count Number -->
                     <span
                       class="w-7 h-7 rounded-full flex items-center justify-center border shadow text-black fs-md family-inter"
@@ -227,7 +232,7 @@
                 </li>
                 <!-- Single Row  -->
                 <li class="flex items-center justify-between">
-                  <div class="flex gap-4">
+                  <div class="flex gap-2 items-center">
                     <!-- Count Number -->
                     <span
                       class="w-7 h-7 rounded-full flex items-center justify-center border shadow text-black fs-md family-inter"
@@ -249,7 +254,7 @@
                 </li>
                 <!-- Single Row  -->
                 <li class="flex items-center justify-between">
-                  <div class="flex gap-4">
+                  <div class="flex gap-2 items-center">
                     <!-- Count Number -->
                     <span
                       class="w-7 h-7 rounded-full flex items-center justify-center border shadow text-black fs-md family-inter"
@@ -271,7 +276,7 @@
                 </li>
                 <!-- Single Row  -->
                 <li class="flex items-center justify-between">
-                  <div class="flex gap-4">
+                  <div class="flex gap-2 items-center">
                     <!-- Count Number -->
                     <span
                       class="w-7 h-7 rounded-full flex items-center justify-center border shadow text-black fs-md family-inter"
@@ -293,7 +298,7 @@
                 </li>
                 <!-- Single Row  -->
                 <li class="flex items-center justify-between">
-                  <div class="flex gap-4">
+                  <div class="flex gap-2 items-center">
                     <!-- Count Number -->
                     <span
                       class="w-7 h-7 rounded-full flex items-center justify-center border shadow text-black fs-md family-inter"
@@ -315,7 +320,7 @@
                 </li>
                 <!-- Single Row  -->
                 <li class="flex items-center justify-between">
-                  <div class="flex gap-4">
+                  <div class="flex gap-2 items-center">
                     <!-- Count Number -->
                     <span
                       class="w-7 h-7 rounded-full flex items-center justify-center border shadow text-black fs-md family-inter"
@@ -338,10 +343,11 @@
               </ul>
             </div>
           </div>
-          <div class="col-right relative lg:top-[-280px]">
+          <!-- Column Right  -->
+          <div class="col-right relative lg:top-[-400px]">
             <div class="bg-white course-cart p-2">
               <img src="./assets/images/IELTS.png" alt="IELTS" class="w-full" />
-              <h5 class="text-black family-inter font-medium text-xl my-2">
+              <h5 class="text-[#000] family-inter font-medium text-[23px] my-2">
                 Rs.20,000
               </h5>
               <button
@@ -444,23 +450,23 @@
 
     <!-- Newsletter START  -->
     <section>
-      <div class="container newsletter">
+      <div class="container newsletter h-[280px] lg:h-[500px]">
         <h4 class="heading mx-auto text-black text-xl md:text-4xl lg:text-5xl">
           Subscribe For Get Update Every New Courses
         </h4>
-        <div class="my-8 flex items-center justify-center">
+        <div class="my-12 w-full flex items-center justify-center">
           <div
-            class="flex items-center justify-center max-w-[680px] w-full h-[48px]"
+            class="flex items-center justify-center h-[58px] max-w-[680px] w-full input-group"
           >
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Enter your email"
-              class="bg-transparent focus:outline-none border-r-transparent fs-base pl-3 basis-[90%] input-group h-full"
+              class="bg-transparent focus:outline-none border-transparent fs-base pl-3 basis-[90%] h-full"
             />
             <button
-              class="bg-secondary text-white fs-base py-3 px-3 sm:px-6 rounded-r-[12px] basis-[2%]"
+              class="bg-secondary text-white fs-base py-4 px-3 sm:px-6 rounded-r-[18px] basis-[2%]"
             >
               Subscribe
             </button>
@@ -469,12 +475,13 @@
       </div>
     </section>
     <!-- Newsletter End -->
+
     <!-- Footer Start  -->
     <footer>
-      <div class="container">
+      <div class="container footer-bg">
         <!-- Footer  Top  -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 border-2 p-4 rounded relative"
+          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 lg:gap-24 border-2 p-4 rounded relative"
         >
           <!-- Column one  -->
           <div class="col-1">
@@ -485,10 +492,10 @@
             />
             <a
               href="tel:+92 334 111 324"
-              class="text-color call text-xs sm:text-base"
+              class="text-color call text-xs sm:text-base lg:text-[18px] flex items-center gap-2"
             >
-              <i class="bx bxs-phone text-brand"></i> <b>Call Us:</b> +92 334
-              111 324
+              <i class="bx bxs-phone text-brand lg:text-2xl"></i>
+              <b>Call Us:</b> +92 334 111 324
             </a>
           </div>
           <!-- Column Two  -->
@@ -590,90 +597,79 @@
         </div>
         <!-- Footer Middle  -->
 
-        <p class="text-xs sm:text-sm my-6 middle">
-          <span class="font-medium">PrepExpert</span>
+        <p class="text-xs sm:text-sm my-6 middle text-color my-8">
+          <strong>PrepExpert</strong>
           is an online education portal that provides interactive study material
           for students of classes 1st to 12th for CBSE, ICSE, Maharashtra
           (MSBSHSE), Karnataka (KSEEB) Kerala (SCERT) and Tamil Nadu boards.
           Complete with elaborate live classes, multimedia tutorials,
           interactive exercises, practice tests and expert help, we endeavour to
-          make school easy for students and help them score more.<span
-            class="hidden md:block"
-          >
-            We also provide free NCERT solutions, subject-wise synopses and
-            chapter-wise revision notes for classes 1st to 12th for a thorough
-            understanding of concepts right from a basic to an advanced level of
-            difficulty. Our products are carefully designed to ensure maximum
-            learning through proven techniques such as conceptual videos,
-            adaptive learning and collaborative learning methods.</span
-          >
+          make school easy for students and help them score more. We also
+          provide free NCERT solutions, subject-wise synopses and chapter-wise
+          revision notes for classes 1st to 12th for a thorough understanding of
+          concepts right from a basic to an advanced level of difficulty. Our
+          products are carefully designed to ensure maximum learning through
+          proven techniques such as conceptual videos, adaptive learning and
+          collaborative learning methods.
         </p>
-        <hr />
+        <hr class="text-color" />
         <!-- Footer Bottom  -->
-        <div class="flex items-center justify-between sm:flex-row mt-3">
+        <div class="flex items-center justify-between sm:flex-row py-6">
           <!-- Links -->
           <ul class="flex gap-1 sm:gap-3 items-center mb-2">
             <li>
               <img
                 src="./assets/images/google-play.png"
                 alt="playStore"
-                class="w-20 hidden md:block"
+                class="w-[120px] hidden md:block"
               />
             </li>
             <li>
               <img
                 src="./assets/images/apple-store.png"
                 alt="apple-store"
-                class="w-20 hidden md:block"
+                class="w-[120px] hidden md:block"
               />
             </li>
             <li class="hover:text-secondary">
-              <a href="#" class="text-[9px] sm:text-base">Aan Tourism</a>
+              <a href="#" class="text-[9px] sm:text-base lg:text-xl"
+                >Prep Expert</a
+              >
             </li>
             <li class="hover:text-secondary">
-              <a href="#" class="text-[9px] sm:text-base">Privacy Policy</a>
+              <a href="#" class="text-[9px] sm:text-base lg:text-xl"
+                >Privacy Policy</a
+              >
             </li>
             <li class="hover:text-secondary">
-              <a href="#" class="text-[9px] sm:text-base">Terms of Usa</a>
+              <a href="#" class="text-[9px] sm:text-base lg:text-xl"
+                >Terms of Usa</a
+              >
             </li>
           </ul>
           <!-- Social Media Links  -->
-          <ul class="flex gap-1">
+          <ul class="flex gap-3">
             <li>
               <a
                 href="#"
                 class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
-                ><i class="bx social-icons bxl-instagram-alt"></i
+                ><i class="bx social-icons bxl-instagram-alt lg:text-4xl"></i
               ></a>
             </li>
             <li>
               <a
                 href="#"
                 class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
-                ><i class="bx social-icons bxl-facebook-square"></i
+                ><i class="bx social-icons bxl-facebook-square lg:text-4xl"></i
               ></a>
             </li>
             <li>
               <a
                 href="#"
                 class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
-                ><i class="bx social-icons bxl-twitter"></i
+                ><i class="bx social-icons bxl-twitter lg:text-4xl"></i
               ></a>
             </li>
-            <!-- <li>
-              <a
-                href="#"
-                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
-                ><i class="bx social-icons bxl-youtube"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-black transition duration-150 ease-out hover:ease-in hover:text-brand"
-                ><i class="bx social-icons bxl-linkedin-square"></i
-              ></a>
-            </li> -->
           </ul>
         </div>
       </div>
