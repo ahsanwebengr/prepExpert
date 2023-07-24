@@ -180,8 +180,8 @@ section {
 }
 .about-banner {
   background: var(--banner-gradient);
-  height: 100vh;
-  height: 100svh;
+  height: 80vh;
+  height: 80svh;
 }
 
 .blog-banner {
@@ -385,6 +385,9 @@ footer .footer-bg {
   }
   .hero-banner {
     height: 80vh;
+  }
+  .about-banner {
+    height: 105vh;
   }
 }
 
