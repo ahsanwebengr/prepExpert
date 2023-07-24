@@ -118,7 +118,7 @@
       <div class="container flex items-center justify-center h-full">
         <div class="grid grid-cols-1 md:grid-cols-2 items-center mt-4">
           <!-- Column Left  -->
-          <div class="col-left">
+          <div class="col-left lg:h-[600px] flex justify-end flex-col">
             <div
               class="bg-white banner-search-bar border rounded-md max-w-[500px] p-3"
             >
@@ -161,11 +161,13 @@
             </div>
           </div>
           <!-- Column Right  -->
-          <div class="col-right mx-auto hidden lg:block">
+          <div
+            class="col-right mx-auto hidden lg:h-[588px] lg:flex lg:justify-end lg:relative lg:bottom-[-59px]"
+          >
             <img
               src="./assets/images/hero-img.png"
               alt="banner-img"
-              class="w-full relative bottom-[-43px]"
+              class="w-full object-cover overflow-hidden"
             />
           </div>
         </div>

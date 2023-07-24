@@ -172,16 +172,15 @@ section {
 }
 .hero-banner {
   background: var(--banner-gradient);
-  height: 70vh;
-  height: 70svh;
+  height: 708px;
 }
 .form-banner {
   background: var(--banner-gradient);
 }
 .about-banner {
   background: var(--banner-gradient);
-  height: 80vh;
-  height: 80svh;
+  height: 90vh;
+  height: 90svh;
 }
 
 .blog-banner {
