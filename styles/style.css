@@ -180,8 +180,8 @@ section {
 }
 .about-banner {
   background: var(--banner-gradient);
-  height: 90vh;
-  height: 90svh;
+  height: 100vh;
+  height: 100svh;
 }
 
 .blog-banner {
