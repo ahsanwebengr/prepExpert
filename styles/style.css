@@ -180,21 +180,20 @@ section {
 }
 .about-banner {
   background: var(--banner-gradient);
-  height: 90vh;
-  height: 90svh;
+  height: 100vh;
 }
 
 .blog-banner,
 .course-banner {
   background-image: url(../assets/images/banner/banner-2.png);
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .course-banner {
-  height: 70vh;
+  height: 100vh;
 }
 
 .banner-search-bar {
@@ -398,7 +397,7 @@ footer .footer-bg {
     grid-template-columns: 1fr;
   }
   .hero-banner {
-    height: 70vh;
+    height: 605px;
   }
   .about-banner {
     height: 105vh;
